@@ -1,16 +1,30 @@
-.movies {
+.movie {
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.movies__cards {
+.movie__genre {
+  align-self: center;
+}
+.movie__information {
+  flex-grow: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.movies__cards__informations {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.movie__information__titre {
+  font-size: 2rem;
+}
+.movie__information__date {
+  opacity: 0.7;
+}
+.movie__information__description {
+  color: red;
+}
+.movie__link {
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */
