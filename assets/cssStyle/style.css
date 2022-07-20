@@ -1,3 +1,16 @@
-
-
-
+.movies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.movies__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.movies__cards__informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}/*# sourceMappingURL=style.css.map */

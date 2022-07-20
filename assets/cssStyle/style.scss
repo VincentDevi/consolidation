@@ -1,0 +1,43 @@
+.movies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    &__cards{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;   
+    
+    &__image{
+
+    }
+    &__genres{
+
+    }
+
+    
+     &__informations{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        &__title{
+
+        }
+        &__date{
+
+        }
+        &__description{
+
+        }
+        &__note{
+        
+        }
+     }
+
+    &__trailer{
+
+     }
+    }
+}
