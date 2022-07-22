@@ -1,30 +1,75 @@
+.center {
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+}
+.center__menu {
+  width: 25%;
+}
+.center__collection {
+  width: 75%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction {
+  height: 25%;
+}
+
 .movie {
-  width: 50%;
+  background-color: #C9D6DF;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
-.movie__genre {
-  align-self: center;
-}
-.movie__information {
-  flex-grow: 50%;
+.movie__card {
+  box-shadow: 10px 5px 5px #52616B;
+  border: solid 3px blue;
+  width: 400px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.movie__information__titre {
+.movie__card__genre {
+  align-self: center;
+}
+.movie__card__container {
+  border: solid 3px red;
+  width: 200px;
+  height: auto;
+  align-self: center;
+}
+.movie__card__container__poster {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.movie__card__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.movie__card__information__titre {
   font-size: 2rem;
 }
-.movie__information__date {
+.movie__card__information__date {
   opacity: 0.7;
 }
-.movie__information__description {
+.movie__card__information__description {
+  height: 20px;
+  overflow: hidden;
   color: red;
+  text-align: justify;
 }
-.movie__link {
+.movie__card__link {
   align-self: center;
 }/*# sourceMappingURL=style.css.map */
