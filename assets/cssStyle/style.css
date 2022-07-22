@@ -23,7 +23,7 @@ body {
   background-color: #C9D6DF;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
