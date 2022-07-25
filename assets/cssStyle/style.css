@@ -21,6 +21,7 @@ body {
   order: 2;
   font-size: 1.5rem;
   align-self: center;
+  text-align: center;
 }
 .introduction__titre {
   font-size: 4rem;
@@ -149,4 +150,69 @@ body {
   text-decoration: none;
   font-size: 2rem;
   color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .introduction__para {
+    font-size: 1rem;
+  }
+  .introduction__titre {
+    font-size: 2rem;
+  }
+  .introduction__navigation {
+    visibility: hidden;
+  }
+  .movie__card {
+    width: 650px;
+    height: 650px;
+  }
+  .movie__card__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  .movie__card__inner__front {
+    box-shadow: 5px 5px 10px grey;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .movie__card__inner__front:active {
+    transform: rotateY(180deg);
+  }
+  .movie__card__inner__front__poster {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .movie__card__inner__back {
+    box-shadow: 5px 5px 10px #EFEFEF;
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .end {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .end__streaming {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */

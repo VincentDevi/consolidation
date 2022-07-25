@@ -1,14 +1,4 @@
-/*
-object = {
-    "film_poster" : ,
-    "title" : ,
-    "genre" : ,
-    "release_date": ,
-    "description": ,
-    "critics":  ,
-    "trailer": 
-}
-*/
+
 
 
 let movieList = [
@@ -104,36 +94,6 @@ let movieList = [
     }
 
 ];
-    /*
-    let listElement = ["article", "img", "h3", "h4", "div", "h2", "p", "a"];
-    for (let i = 0; i < listElement.length; i++){
-
-    }
-const objLength = Object.keys(movieList[0]);
-let listElement = ["article", "img", "h3", "h4", "div", "h2", "p", "a"];
-
-let getMain = document.querySelector("main");
-let mainTable = document.createElement("table");
-
-for (let i = 0; i < 2; i++){
-    let rowTable = document.createElement("tr");
-    for (let j =0; i< 5; i++){
-        let cell = document.createElement("td");
-        rowTable.appendChild(cell);
-    }
-}
-
-
-let arr2 = ["h2","p","p","h4"];
-let arr1 =["img","h3","article","a"];
-function createSection(anObject) {
-    document.createElement("section");
-    for (const i of arr1) {
-        document.createElement(i);
-        for (let )
-    }
-}
-*/
 
 function cards(movie) {
     let ok = document.querySelector("main");
