@@ -71,7 +71,7 @@ let movieList = [
         "title" : "Pulp Fiction",
         "genre" : "Gangster",
         "release_date": "9 november 1994",
-        "description": "une description",
+        "description": "Pulp Fiction's narrative is told out of chronological order, and follows three main interrelated stories that each have a different protagonist: Vincent Vega, a hitman; Butch Coolidge, a prizefighter; and Jules Winnfield, Vincent's business partner. ",
         "critics": "5/5",
         "trailer": "un lien"
     }
@@ -139,6 +139,8 @@ function cards(movie) {
         genre.className = "center__movie__card__inner__back__genre";
         divi.appendChild(genre);
 
+            
+
         let titre = document.createElement("h2");
         titre.appendChild(document.createTextNode(movie["title"]));
         titre.className = "center__movie__card__inner__back__titre"
@@ -165,6 +167,8 @@ function cards(movie) {
         divi.appendChild(link);
 
 }
+
+
 
 for (const i of movieList) {
     cards(i);

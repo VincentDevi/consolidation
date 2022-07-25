@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Special+Elite&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/cssStyle/style.css">
     <script defer src="assets/script/script.js"></script>
     <title>Consolidation</title>
@@ -12,20 +14,27 @@
 <body>
     <header class="introduction">
         <h1 class="introduction__titre">Geat movies you have to watch.</h1>
-
+        <p class="introduction__para">On this site, you will find my favorites movies. This will maybe give you inspiration if you don't know what to watch.</p>
         <nav>
 
             <ul class="introduction__navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Contact</a></li>
+                <li ><a class="introduction__navigation__element" href="#">Home</a></li>
+                <li ><a class="introduction__navigation__element" href="#">About me</a></li>
+                <li ><a class="introduction__navigation__element" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
     <section class="center">
         
         <aside class="center__menu">
-            <p>Filter</p>
+            <p>filter</p>
+            <ul class="center__menu__classification"> 
+                <li>Horror</li>
+                <li>Romantic</li>
+                <li>Action</li>
+                <li>Gangster</li>
+                <li>Comdedy</li>
+            </ul>
         </aside>
         
         
@@ -36,7 +45,6 @@
     </section>
 
     <footer class="end">
-        <p>un footer</p>
         <nav>
             <ul class="end__streaming">
                 <li>
