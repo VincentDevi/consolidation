@@ -44,7 +44,7 @@ let movieList = [
         "title" : "Still Alice",
         "genre" : "Drama",
         "release_date" : "5 december 2014",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description" : "Alice Howland, professeure de linguistique à l'Université de Columbia, fête son cinquantième anniversaire avec son mari médecin John et leurs trois enfants adultes. Après qu'elle a oublié un mot pendant une conférence et s'est perdue pendant un jogging sur le campus, le médecin d'Alice lui diagnostique un début de maladie d'Alzheimer congénitale. Deux de ses enfants, Anna et Tom, se font dépister. Lydia, sa fille cadette et actrice débutante, décide de ne pas savoir",
         "critics" :"4/5",
         "trailer" : "un lien"
     },
