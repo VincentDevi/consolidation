@@ -19,6 +19,7 @@ body{
     background-color: $goodRed;
     &__para{
         order: 2;
+        font-size: 1.5rem;
         align-self: center;
     }
     &__titre{
@@ -52,19 +53,7 @@ body{
     flex-basis: auto;
 
     display: flex;
-    &__menu{
-        
-        &__classification{
-          
-        }
-        align-self: flex-start;
-        
-        
-        background-color: $greenLight;
-        
-        width: 15%;
-        border: 1px solid green;
-    }
+    
     &__movie{
         
         
@@ -162,7 +151,7 @@ body{
 
 
 .end{
-    flex-basis: 200px;
+    height: 200px;
     background-color: $goodRed;
     display: flex;
     flex-direction: column;
@@ -172,6 +161,17 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        list-style: none;
+        &__plateform{
+            text-decoration: none;
+            font-size: 2rem;
+            color: black;
+        }
+        
+      
+            
+
+            
         
     }
 }
