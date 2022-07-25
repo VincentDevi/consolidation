@@ -34,45 +34,58 @@ body {
   border: solid 3px red;
   width: 400px;
   height: 650px;
+  perspective: 1000px;
 }
-.center__movie__card__container {
+.center__movie__card__inner {
+  position: relative;
   width: 100%;
   height: 100%;
-  position: absolute;
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
-.center__movie__card__container__poster {
+.center__movie__card__inner:hover {
+  transform: rotateY(180deg);
+}
+.center__movie__card__inner__front {
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.center__movie__card__inner__front__poster {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.center__movie__card__information {
-  z-index: 100;
+.center__movie__card__inner__back {
   position: absolute;
-  height: 100%;
-  width: 100%;
   top: 0;
-  visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
   display: flex;
+  background-color: red;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.center__movie__card__information__genre {
+.center__movie__card__inner__back__genre {
   border: solid 2px red;
 }
-.center__movie__card__information__titre {
+.center__movie__card__inner__back__titre {
   font-size: large;
 }
-.center__movie__card__information__date {
+.center__movie__card__inner__back__date {
   opacity: 0.5;
 }
-.center__movie__card__information__description {
+.center__movie__card__inner__back__description {
   color: blue;
 }
-.center__movie__card__information__note {
+.center__movie__card__inner__back__note {
   font-weight: bold;
 }
-.center__movie__card__information__link {
+.center__movie__card__inner__back__link {
   opacity: 0.75;
 }
 

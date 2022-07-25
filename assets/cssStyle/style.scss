@@ -33,55 +33,71 @@ body{
             border: solid 3px red;
             width: 400px;
             height: 650px;
-            &__container{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                
-                
-                &__poster{  
-                    width: 100%;
-                    height: auto;
-                    object-fit: cover;
-                    
-                }
-            }
-            &__information{
-                z-index: 100;
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                top: 0;
-                visibility: hidden;
-                
-                
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
+            perspective: 1000px;
 
-                &__genre{
-                    border: solid 2px red;
+
+            &__inner{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: transform 1s;
+                transform-style: preserve-3d;
+
+                &:hover{
+                    transform: rotateY(180deg);
                 }
-                &__titre{
-                    font-size: large;
+                    
+                &__front{
+                   position: absolute;
+                   backface-visibility: hidden;
+                   -webkit-backface-visibility: hidden;
+                                                            
+                    &__poster{  
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                        
+                        
+                    }
                 }
-                &__date{
-                    opacity: 0.5;
-                }
-                &__description{
-                    color: blue;
-                }
-                &__note{
-                    font-weight: bold;
-                }
-                &__link{
-                    opacity: 0.75;
-                }
+                &__back{
+                    position: absolute;
+                    top: 0;
+                    backface-visibility: hidden;
+                    -webkit-backface-visibility: hidden;
+                    transform: rotateY(180deg);
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    background-color: red;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    &__genre{
+                        border: solid 2px red;
+                    }
+                    &__titre{
+                        font-size: large;
+                    }
+                    &__date{
+                        opacity: 0.5;
+                    }
+                    &__description{
+                        color: blue;
+                    }
+                    &__note{
+                        font-weight: bold;
+                    }
+                    &__link{
+                        opacity: 0.75;
+                    }
                 
+                }
             }
         }
     }
 }
+
 
 .end{
     display: flex;

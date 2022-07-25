@@ -115,49 +115,53 @@ function cards(movie) {
     sec.className = "center__movie__card";
     ok.appendChild(sec);
 
+    let innerCard = document.createElement("div");
+    sec.appendChild(innerCard);
+    innerCard.className = "center__movie__card__inner";
+
     let container = document.createElement("div");
-    container.className = "container";
-    sec.appendChild(container);;
+    container.className = "center__movie__card__inner__front";
+    innerCard.appendChild(container);;
 
     let im = document.createElement("img");
-    im.className = "center__movie__card__container__poster";
+    im.className = "center__movie__card__inner__front__poster";
     im.src = movie["film_poster"];
     container.appendChild(im);
 
 
 
     let divi = document.createElement("article");
-    sec.appendChild(divi);
-    divi.className = "center__movie__card__information";
+    innerCard.appendChild(divi);
+    divi.className = "center__movie__card__inner__back";
 
         let genre = document.createElement("h3");
         genre.appendChild(document.createTextNode(movie["genre"]));
-        genre.className = "center__movie__card__information__genre";
+        genre.className = "center__movie__card__inner__back__genre";
         divi.appendChild(genre);
 
         let titre = document.createElement("h2");
         titre.appendChild(document.createTextNode(movie["title"]));
-        titre.className = "center__movie__card__information__titre"
+        titre.className = "center__movie__card__inner__back__titre"
         divi.appendChild(titre);
 
         let date = document.createElement("p");
         date.appendChild(document.createTextNode(movie["release_date"]));
-        date.className = "center__movie__card__information__date"
+        date.className = "center__movie__card__inner__back__date"
         divi.appendChild(date);
 
         let desc = document.createElement("p");
         desc.appendChild(document.createTextNode(movie["description"]));
-        desc.className = "center__movie__card__information__description"
+        desc.className = "center__movie__card__inner__back__description"
         divi.appendChild(desc);
 
         let note = document.createElement("h4");
         note.appendChild(document.createTextNode(movie["critics"]));
-        note.className = "center__movie__card__information__note";
+        note.className = "center__movie__card__inner__back__note";
         divi.appendChild(note);
 
         let link = document.createElement("a");
         link.appendChild(document.createTextNode(movie["trailer"]));
-        link.className = "center__movie__card__link"
+        link.className = "center__movie__card__inner__back__link"
         divi.appendChild(link);
 
 }
